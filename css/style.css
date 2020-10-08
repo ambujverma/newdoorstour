@@ -1807,6 +1807,7 @@ h1.pxp-page-header {
 .pxp-dark-mode .pxp-agents-1-item-details-email {
   color: #fff;
 }
+
 .pxp-agents-1-item-cta {
   position: absolute;
   color: #333;
@@ -5943,3 +5944,4 @@ fieldset[disabled] .checkbox.custom-checkbox input:checked + span {
   color: white;
   border-radius: 5px;
 }
+
