@@ -446,8 +446,8 @@
           .replace(/\D/g, "")
           .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     );
-    $("#pxp-calculator-data-pt").text(taxes);
-    $("#pxp-calculator-data-hd").text(dues);
+    // $("#pxp-calculator-data-pt").text(taxes);
+    // $("#pxp-calculator-data-hd").text(dues);
     $(".pxp-calculator-chart-result-sum").text(
       "₹" +
         total
