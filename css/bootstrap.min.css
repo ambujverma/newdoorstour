@@ -39,6 +39,7 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }

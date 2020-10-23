@@ -135,67 +135,91 @@ huge jump for real estate market.`
     {
         id:`id-1`,
 
-        day_time : `September 29, 2020`,
+        day_time : `October 22, 2020`,
 
         header_type:`Virtual Reality`,
 
-        header_part:`Virtual Reality V/S Augumented Reality`,
+        header_part:`How Virtual Reality is transforming Real Estate Industry`,
 
-        url_img:`url(images/post-3.jpg)`,
+        url_img:`url(images/virtual-real-estate-1.jpg)`,
 
-        p1:` Most designers will tell you that, as much as we all love to
-        watch home design shows, their prevalence has done them a
-        bit of a disservice. Thanks to TV magic, the designers on
-        those shows pull off projects with tight deadlines and
-        shoestring budgets that would never fly in the real world.`,
+        p1:` The real estate industry has hyped up after the assistance of the virtual reality, which has
+        helped the buyer and the seller both in case of visiting the property and to connect both the
+        parties who are geographically far apart.
+        Virtual reality is the new advanced technology of making it possible to travel from place to place
+        even when one is still at a place. The main idea of virtual reality is to give the customer an HD
+        (HighDefinition) experience of visiting a place without even moving from his place.
+        Virtual reality has helped many industries to bloom in days with better experience, transforming
+        the old and traditional way of business.`,
 
-        p2:`Of course, every project is different. The best way to get a
-        handle on an anticipated budget and duration is by asking
-        potential designers for this information upfront. Don’t be
-        afraid to reach out to more than one to get a realistic
-        picture of what to expect.`,
+        p2:`With the help of virtual reality, it has become possible for the buyers to visit the property or have
+        a look at how the estate might look making it easy for not just the buyers but also for the sellers
+        / real estate agents to show the house property at their convenience.
+        `,
 
         video_img:`url(images/hero-prop-12.jpg)`,
 
         video_youtube:`https://www.youtube.com/embed/4Wee4LASqvE?start=23`,
 
-        p3:` Not all designers are created equal. Like all of us, each
-        designer has his or her own unique personal tastes, quirks
-        and business practices. To make sure your project is a
-        success, it’s important that you and your designer are on
-        the same page with a lot of these details. You may need to
-        interview a few before you find someone who’s the right fit.`,
+        p3:` The old traditional method of buying and selling of property used to happen when the buyer and
+        seller meets in person and visits the property.
+        The process includes huge formalities from searching from ways to actually visiting the place.
+        The buyer used to decide the area to shift in and then they contact the local real estate agents
+        of the area and then take priop approval of the property seller for visit. The seller needs to be
+        available for visit and accordingly the buyer and agents had to decide for the same.
+        Also the agents and buyer needed to keep knowledge of the availability of keys of the flat /
+        property, so as to avoid inconvenience.`,
 
-        p4:`In the design world, this interview is called a
-        consultation. It can be an in-person meeting or held over
-        the phone, and it can be paid or unpaid. You can use this
-        time to ask to see samples of the designer’s work, learn
-        more about their process, and ask about business practices,
-        such as their preferred methods for communication and
-        billing.`,
+        p4:`How Virtual reality could help the real estate industry / Why one prefers VR over
+        traditional method :
+        With the help of VR it has helped to save time, energy and money of both the parties.
+        ● Saves time : It has become easy for the buyer and seller to not search for directions to
+        property.
+        ● Saves Money : travelling cost of both the parties could be saved with the help of VR
+        experience.
+        ● Saves energy : So as it has become easy to visit the property sitting at one's home itself
+        at one's convenience it helps save enery.
+        Types of Virtual Tours :
 
-        p5:` You can also use this time to let the designer get to know
-        you. Feel free to bring in a few photos or items you intend
-        to use for design inspiration. Let the designer know about
-        your specific quirks and personal preferences. By the end of
-        the meeting, you should have a good sense of whether the two
-        of you will work well together.`,
+There are currently 2 types of virtual tours
+● Interactive Visits : This kind of experience is for as to when the buyer can actively
+interact with all the areas of the property as this kind of visit helps one to look and
+experience in detail all the areas which the buyer wishes to visit. In short Interactive type
+of visit helps the buyer to control his experience of visit.
+● Guided Visits : This kind of tours usually exists for as a video format with a 3d effect
+with it so as the buyer can visit all the recorded portions of the property.
 
-        quote:`It is a long established fact that a reader will be
-        distracted by the readable content of a page when looking at
-        its layout.`,
+What is Architectural Visualization ?
 
-        img1:`images/hero-prop-4.jpg`,
+There are a lot many properties / building still working in progress of construction. It becomes
+difficult for the seller / builder to showcase their 'Not yet developed' project which is still under
+construction, in this case it becomes very expensive if Architectural Visualization wouldn't
+have been made available.
+Architectural Visualization is really cheap and has made it easy and possible for the seller to
+present their work / project with better visualization effect. This way the client gets a proper view
+of what is offered to them.`,
 
-        img2:`images/hero-prop-9.jpg`,
+        p5:` What is Virtual Commerce ?
 
-        final_para:`For those who have never hired an interior designer before,
-        the idea of doing so can feel out of reach, but it doesn’t
-        need to be. We’ve created a first-timer’s guide to working
-        with an interior designer to help you take the plunge. Use
-        the advice in this post to make an informed decision as to
-        whether hiring professional help is the right choice for
-        you.`
+        As discussed above it proves that everything is possible from visiting places by just sitting at
+        one's home. A person from a foreign country could visit any property staying at home.
+        (Example, a person from Dubai, could visit a property in India with the help of VR assistance)
+        Now imagine visiting a property, which has furniture in it, you like the property but are not
+        satisfied with the interior design, what could be possible here?
+        You can simply go to a virtual store and replace the furniture or designs you are not satisfied
+        with, Yes it's possible.
+        This is the idea of Virtual Commerce.
+        This helps the client / buyer to visit the property and design the property just by visiting the
+        virtual store and get a perfect view of how actually your property will look like when designed by
+        self.`,
+
+        quote:`This is probably the biggest benefit – virtual reality solutions save time for both clients and realtors. Thanks to VR, there’s no need to travel from one property to another and sit in traffic jams.`,
+
+        img1:`images/virtual-real-estate-2.png`,
+
+        img2:`images/virtual-real-estate-3.png`,
+
+        final_para:` Virtual Reality has already started evolution in the real estate industry making lives of people easier to visualize how their home/property would look like without stepping out of their homes or actually visiting it.`
     },
     {
         id:`id-2`,
