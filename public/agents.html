@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YNNC95NX7R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YNNC95NX7R');
+</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -11,9 +20,9 @@
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/style42f6.css?lokas" />
+    <link rel="stylesheet" href="css/style5b0d.css?osaiduu" />
 
-    <title>DoorsTour - About Us</title>
+    <title>Agents - DoorsTour</title>
   </head>
   <body>
     <div class="pxp-header fixed-top pxp-animate pxp-no-bg">
@@ -38,9 +47,9 @@
                 <a href="#">Properties</a>
                 <ul class="pxp-nav-sub rounded-lg">
                   <li><a href="properties.html">Buy</a></li>
-                  <li><a href="single-property.html">Rent</a></li>
+                  <li><a href="properties.html">Rent</a></li>
                   <li>
-                    <a href="submit-property.html">PG</a>
+                    <a href="properties.html">PG</a>
                   </li>
                 </ul>
               </li>
@@ -71,7 +80,7 @@
               </li>
               <li class="list-inline-item">
                 <div class="pxp-user-btns">
-                  <a href="https://property.doorstour.com/"
+                  <a href="submit-property.html"
                     ><button
                       class="pxp-user-btns"
                       style="
@@ -112,16 +121,17 @@
         </div>
       </div>
     </div>
-    <!-- header end -->
 
-    <!-- content start -->
     <div class="pxp-content">
       <div class="pxp-agents pxp-content-wrapper mt-100">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-7">
-              <h1 class="pxp-page-header">About Us</h1>
-              <p class="pxp-text-light">Higher Form of Virtual Reality</p>
+              <h1 class="pxp-page-header">Our Agents</h1>
+              <p class="pxp-text-light">
+                Pairing the industry's top technology with unsurpassed local
+                expertise.
+              </p>
             </div>
           </div>
         </div>
@@ -130,7 +140,7 @@
           <div
             class="pxp-agents-hero-fig pxp-cover"
             style="
-              background-image: url(images/about-hero.jpg);
+              background-image: url(images/agents-hero.jpg);
               background-position: 50% 60%;
             "
           ></div>
@@ -138,25 +148,47 @@
           <div class="pxp-agents-hero-search-container">
             <div class="container">
               <div class="pxp-agents-hero-search">
-                <h2 class="pxp-section-h2">Our Vision</h2>
+                <h2 class="pxp-section-h2">Find an Agent</h2>
                 <div class="pxp-agents-hero-search-form mt-3 mt-md-4">
                   <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                      <p>
-                        DoorsTour is a unique digital platform which offers 360
-                        degree view solution to our customers for all their
-                        property needs. The portal is completely devoted to meet
-                        every requirement of the customer. At DoorsTour we
-                        provide credible information with maximum properties on
-                        our portal. We at DoorsTour are not only focused to
-                        provide buy, sell and rent details but also help
-                        customers in post and pre buying the property.<br /><br />
-                        Apart from a robust search mechanism, DoorsTour also
-                        maintains a vast repository of research on a host of
-                        property related matters ranging from legal issues to
-                        maintenance to facility management to home insurance
-                        among many others.
-                      </p>
+                    <div class="col-sm-12 col-md-4">
+                      <div class="form-group">
+                        <label for="pxp-agents-search-location">Location</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="pxp-agents-search-location"
+                          placeholder="Neighborhood/City/Zip"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <div class="form-group">
+                        <label for="pxp-agents-search-name">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="pxp-agents-search-name"
+                          placeholder="Agent name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                      <div class="form-group">
+                        <label for="pxp-agents-search-service"
+                          >Service Needed</label
+                        >
+                        <select
+                          class="custom-select"
+                          id="pxp-agents-search-service"
+                        >
+                          <option value="1" selected="selected">
+                            Buying or selling
+                          </option>
+                          <option value="2">Buying a home</option>
+                          <option value="3">Selling a home</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -166,179 +198,296 @@
         </div>
 
         <div class="container">
-          <div class="pxp-content">
-            <div class="pxp-agents pxp-content-wrapper mt-100">
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-12 col-md-7">
-                    <h1 class="pxp-page-header">Meet Our Team</h1>            
+          <div class="row mt-200">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-1.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Scott Goodwin
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (123) 456-7890
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
                   </div>
                 </div>
-              </div>
-              </div>
-              </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-2.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Alayna Becker
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (456) 123-7890
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star-o"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-3.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Melvin Blackwell
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (789) 123-4560
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-4.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Erika Tillman
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (890) 456-1237
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star-o"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-3.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Melvin Blackwell
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (789) 123-4560
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-4.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Erika Tillman
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (890) 456-1237
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star-o"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-1.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Scott Goodwin
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (123) 456-7890
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="single-agent.html" class="pxp-agents-1-item">
+                <div class="pxp-agents-1-item-fig-container rounded-lg">
+                  <div
+                    class="pxp-agents-1-item-fig pxp-cover"
+                    style="
+                      background-image: url(images/agent-2.jpg);
+                      background-position: top center;
+                    "
+                  ></div>
+                </div>
+                <div class="pxp-agents-1-item-details rounded-lg">
+                  <div class="pxp-agents-1-item-details-name">
+                    Alayna Becker
+                  </div>
+                  <div class="pxp-agents-1-item-details-email">
+                    <span class="fa fa-phone"></span> (456) 123-7890
+                  </div>
+                  <div class="pxp-agents-1-item-details-spacer"></div>
+                  <div class="pxp-agents-1-item-cta text-uppercase">
+                    More Details
+                  </div>
+                </div>
+                <div class="pxp-agents-1-item-rating">
+                  <span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star"></span
+                    ><span class="fa fa-star-o"></span
+                  ></span>
+                </div>
+              </a>
+            </div>
+          </div>
 
-          
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="pxp-agents-1-item">
-                <div class="pxp-agents-1-item-fig-container rounded-lg">
-                  <div
-                    class="pxp-agents-1-item-fig pxp-cover"
-                    style="
-                      background-image: url(images/anant.jpg);
-                      background-position: top center;
-                    "
-                  ></div>
-                </div>
-                <div class="pxp-agents-1-item-details rounded-lg">
-                  <div class="pxp-agents-1-item-details-name">
-                    Anant Goel
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                     Founder and CEO
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                    <span class="fa fa-envelope"></span> anant@doorstour.com
-                  </div>
-                  <div class="pxp-agents-1-item-details-email" style="font-size: 1.5em; letter-spacing: 5px;">
-                  <a href="https://www.instagram.com/anantgoel/"><span class="fa fa-instagram" style="color: #2eca6a;"></span></a>
-        <a href="https://www.facebook.com/anant.goel.35"><span class="fa fa-facebook-square" style="color: #2eca6a;"></span></a>
-        <a href="https://www.linkedin.com/in/anantgoel2699"><span class="fa fa-linkedin" style="color: #2eca6a;"></span></a>
+          <ul class="pagination pxp-paginantion mt-2 mt-md-3">
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"
+                >Next <span class="fa fa-angle-right"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="pxp-agents-1-item">
-                <div class="pxp-agents-1-item-fig-container rounded-lg">
-                  <div
-                    class="pxp-agents-1-item-fig pxp-cover"
-                    style="
-                      background-image: url(images/kanishk.jpg);
-                      background-position: top center;
-                    "
-                  ></div>
-                </div>
-                <div class="pxp-agents-1-item-details rounded-lg">
-                  <div class="pxp-agents-1-item-details-name">
-                    Kanishk Sharma
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                     Co-Founder and CTO
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                    <span class="fa fa-envelope"></span> kanishk@doorstour.com
-                  </div>
-                  <div class="pxp-agents-1-item-details-email" style="font-size: 1.5em; letter-spacing: 5px;">
-                  <a href="https://www.linkedin.com/in/kanishksharma14/"><span class="fa fa-linkedin" style="color: #2eca6a;"></span></a>
-        <a href="https://www.instagram.com/kanishk0._.0/"><span class="fa fa-instagram" style="color: #2eca6a;"></span></a>
-        
-      </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="pxp-agents-1-item">
-                <div class="pxp-agents-1-item-fig-container rounded-lg">
-                  <div
-                    class="pxp-agents-1-item-fig pxp-cover"
-                    style="
-                      background-image: url(images/kunal.jpg);
-                      background-position: top center;
-                    "
-                  ></div>
-                </div>
-                <div class="pxp-agents-1-item-details rounded-lg">
-                  <div class="pxp-agents-1-item-details-name">
-                    Kunal Singh
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                     Co-Founder and CMO
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                    <span class="fa fa-envelope"></span> kunal@doorstour.com
-                  </div>
-                  <div class="pxp-agents-1-item-details-email" style="font-size: 1.5em; letter-spacing: 5px;">
-                  <a href="https://www.instagram.com/singh.kunal.2000/"><span class="fa fa-instagram" style="color: #2eca6a;"></span></a>
-        <a href="https://www.facebook.com/profile.php?id=100007611993154"><span class="fa fa-facebook-square" style="color: #2eca6a;"></span></a>
-        <a href="http://linkedin.com/in/kunal-singh-b79527194"><span class="fa fa-linkedin" style="color: #2eca6a;"></span></a>
-      </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="pxp-agents-1-item">
-                <div class="pxp-agents-1-item-fig-container rounded-lg">
-                  <div
-                    class="pxp-agents-1-item-fig pxp-cover"
-                    style="
-                      background-image: url(images/chirag.jpg);
-                      background-position: top center;
-                    "
-                  ></div>
-                </div>
-                <div class="pxp-agents-1-item-details rounded-lg">
-                  <div class="pxp-agents-1-item-details-name">
-                    Chirag Seth
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                     Co-Founder and CMO
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                    <span class="fa fa-envelope"></span> chirag@doorstour.com
-                  </div>
-                  <div class="pxp-agents-1-item-details-email" style="font-size: 1.5em; letter-spacing: 5px;">
-                  <a href="https://www.instagram.com/chirag_seth_3o/"><span class="fa fa-instagram" style="color: #2eca6a;"></span></a>
-        <a href="https://www.facebook.com/chirag.sethi.906638"><span class="fa fa-facebook-square" style="color: #2eca6a;"></span></a>
-        <a href="https://www.linkedin.com/in/chirag-seth-14b787193/"><span class="fa fa-linkedin" style="color: #2eca6a;"></span></a>
-      </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <div class="pxp-agents-1-item">
-                <div class="pxp-agents-1-item-fig-container rounded-lg">
-                  <div
-                    class="pxp-agents-1-item-fig pxp-cover"
-                    style="
-                      background-image: url(images/lakshya.jpg);
-                      background-position: top center;
-                    "
-                  ></div>
-                </div>
-                <div class="pxp-agents-1-item-details rounded-lg">
-                  <div class="pxp-agents-1-item-details-name">
-                    Lakshya Vats
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                     Co-Founder and COO
-                  </div>
-                  <div class="pxp-agents-1-item-details-email">
-                    <span class="fa fa-envelope"></span> lakshya@doorstour.com
-                  </div>
-                  <div class="pxp-agents-1-item-details-email" style="font-size: 1.5em; letter-spacing: 5px;">
-                  <a href="https://www.instagram.com/the.fitness.monk/"><span class="fa fa-instagram" style="color: #2eca6a;"></span></a>
-        <a href="https://www.facebook.com/lakshay.vats.5"><span class="fa fa-facebook-square" style="color: #2eca6a;"></span></a>
-        <a href="https://www.linkedin.com/in/lakshyavats-here"><span class="fa fa-linkedin" style="color: #2eca6a;"></span></a>
-        <a href="https://twitter.com/VatsforYou"><span class="fa fa-twitter" style="color: #2eca6a;"></span></a>
-      </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          </div>
-    <!-- content end -->
+    </div>
 
     <!-- footer -->
     <div class="pxp-footer pt-100 pb-100 mt-100">
@@ -373,7 +522,7 @@
                 <ul class="list-unstyled pxp-footer-links mt-2">
                   <li><a href="properties.html">Buy Properties</a></li>
                   <li><a href="properties.html">Rent Properties</a></li>
-                  <li><a href="properties.html">Sell Properties</a></li>
+                  <li><a href="submit-property.html">Sell Properties</a></li>
                 </ul>
               </div>
               <div class="col-sm-12 col-md-4">
@@ -559,9 +708,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYV9SV-9ZfSiFtqnPqd3UjdSgfX8VcQ8M&amp;libraries=geometry&amp;libraries=places"></script>
     <script src="js/jquery.sticky.js"></script>
-    <script src="js/contact-mapee54.js?assasd"></script>
     <script src="js/main37d7.js?kasjdk"></script>
   </body>
 </html>
