@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YNNC95NX7R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YNNC95NX7R');
-</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -47,9 +38,9 @@
                 <a href="#">Properties</a>
                 <ul class="pxp-nav-sub rounded-lg">
                   <li><a href="properties.html">Buy</a></li>
-                  <li><a href="properties.html">Rent</a></li>
+                  <li><a href="single-property.html">Rent</a></li>
                   <li>
-                    <a href="properties.html">PG</a>
+                    <a href="submit-property.html">PG</a>
                   </li>
                 </ul>
               </li>
@@ -80,7 +71,7 @@
               </li>
               <li class="list-inline-item">
                 <div class="pxp-user-btns">
-                  <a href="submit-property.html"
+                  <a href="https://property.doorstour.com/"
                     ><button
                       class="pxp-user-btns"
                       style="
@@ -180,7 +171,7 @@
             </div>
           </div>
         </div>
-
+      <form method="post" action="contact.php"> 
         <div class="container mt-200">
           <div class="row">
             <div class="col-sm-12 col-lg-6">
@@ -193,7 +184,9 @@
                         type="text"
                         class="form-control"
                         id="pxp-contact-form-name"
+                        name="pxp-contact-form-name-name"
                         placeholder="Name"
+                        required
                       />
                     </div>
                   </div>
@@ -203,20 +196,22 @@
                         type="text"
                         class="form-control"
                         id="pxp-contact-form-email"
+                        name="pxp-contact-form-email-name"
                         placeholder="Email"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6">
                     <div class="form-group">
-                      <select class="custom-select" id="pxp-contact-form-reg">
-                        <option value="">What is this regarding?</option>
-                        <option value="">Customer support / feedback</option>
-                        <option value="">Applying</option>
-                        <option value="">Press</option>
-                        <option value="">Listings</option>
-                        <option value="">Partnerships</option>
-                        <option value="">General questions</option>
+                      <select class="custom-select" id="pxp-contact-form-reg" name="pxp-contact-form-reg-name" required>
+                        <option value="" selected disabled hidden>What is this regarding?</option>
+                        <option value="customer support or feedback">Customer support / feedback</option>
+                        <option value="applying">Applying</option>
+                        <option value="press">Press</option>
+                        <option value="listings">Listings</option>
+                        <option value="partnerships">Partnerships</option>
+                        <option value="general questions">General questions</option>
                       </select>
                     </div>
                   </div>
@@ -225,8 +220,10 @@
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Phone (optional)"
+                        placeholder="Phone Number"
                         id="pxp-contact-form-phone"
+                        name="pxp-contact-form-phone-name"
+                        required
                       />
                     </div>
                   </div>
@@ -235,11 +232,13 @@
                   <textarea
                     class="form-control"
                     id="pxp-contact-form-message"
+                    name="pxp-contact-form-message-name"
                     rows="6"
-                    placeholder="Message"
+                    placeholder="Message to be dropped"
+                    required
                   ></textarea>
                 </div>
-                <a href="#" class="pxp-contact-form-btn">Send Message</a>
+                <button type="submit" class="pxp-contact-form-btn">Send Message</button>
               </div>
             </div>
             <div class="col-sm-12 col-lg-6">
@@ -267,223 +266,224 @@
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
 
-    <div class="pxp-footer pt-100 pb-100 mt-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-4">
-            <div class="pxp-footer-logo">DoorsTour</div>
-            <div class="pxp-footer-address mt-2">
-              <p>
-                Launched in 2020, DoorsTour is India's fastest growing online
-                Property marketplace to buy, sell, and rent residential and
-                commercial properties. Experience every property in 360 view,
-                DoorsTour is the most preferred real estate portal in India by
-                various independent surveys.
-              </p>
+  <div class="pxp-footer pt-100 pb-100 mt-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="pxp-footer-logo">DoorsTour</div>
+          <div class="pxp-footer-address mt-2">
+            <p>
+              Launched in 2020, DoorsTour is India's fastest growing online
+              Property marketplace to buy, sell, and rent residential and
+              commercial properties. Experience every property in 360 view,
+              DoorsTour is the most preferred real estate portal in India by
+              various independent surveys.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-8">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <h4 class="pxp-footer-header mt-4 mt-lg-0">Company</h4>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="agents.html">Agents</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h4 class="pxp-footer-header mt-4 mt-lg-0">Actions</h4>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="properties.html">Buy Properties</a></li>
+                <li><a href="properties.html">Rent Properties</a></li>
+                <li><a href="submit-property.html">Sell Properties</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h4 class="pxp-footer-header mt-4 mt-lg-0">Explore</h4>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="properties.html">Homes for Rent</a></li>
+                <li><a href="properties.html">Apartments for Rent</a></li>
+                <li><a href="properties.html">Homes for Sale</a></li>
+                <li><a href="properties.html">Apartments for Sale</a></li>
+                
+              </ul>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-8">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pxp-footer-social mt-2">
+    <div class="col-md-12" style="text-align: center">
+      <a href="https://www.instagram.com/doorstourindia/"><span class="fa fa-instagram"></span></a>
+      <a href="https://www.facebook.com/doorstourindia/"><span class="fa fa-facebook-square"></span></a>
+      <a href="https://twitter.com/doorstour1?s=08"><span class="fa fa-twitter"></span></a>
+      <a href="https://www.linkedin.com/company/doorstour/"><span class="fa fa-linkedin"></span></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" style="text-align: center">
+      <div class="pxp-footer-bottom mt-2">
+        <div>
+          <a href="termsncond.html">Terms & Conditions</a> and
+          <a href="privacypolicy.html">Privacy Policy</a>
+        </div>
+        <div class="pxp-footer-copyright">
+          &copy; DoorsTour All Rights Reserved. 2020
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="pxp-signin-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="pxpSigninModal"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="modal-title" id="pxpSigninModal">Welcome back!</h5>
+          <form class="mt-4">
+            <div class="form-group">
+              <label for="pxp-signin-email">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="pxp-signin-email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pxp-signin-pass">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pxp-signin-pass"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="form-group">
+              <a href="#" class="pxp-agent-contact-modal-btn">Sign In</a>
+            </div>
+            <div class="form-group mt-4 text-center pxp-modal-small">
+              <a href="#" class="pxp-modal-link">Forgot password</a>
+            </div>
+            <div class="text-center pxp-modal-small">
+              New to DoorsTour?
+              <a
+                href="javascript:void(0);"
+                class="pxp-modal-link pxp-signup-trigger"
+                >Create an account</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="pxp-signup-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="pxpSignupModal"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="modal-title" id="pxpSignupModal">Create an account</h5>
+          <form class="mt-4">
             <div class="row">
-              <div class="col-sm-12 col-md-4">
-                <h4 class="pxp-footer-header mt-4 mt-lg-0">Company</h4>
-                <ul class="list-unstyled pxp-footer-links mt-2">
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="agents.html">Agents</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="#">Sitemap</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="pxp-signup-firstname">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pxp-signup-firstname"
+                    placeholder="Enter first name"
+                  />
+                </div>
               </div>
-              <div class="col-sm-12 col-md-4">
-                <h4 class="pxp-footer-header mt-4 mt-lg-0">Actions</h4>
-                <ul class="list-unstyled pxp-footer-links mt-2">
-                  <li><a href="properties.html">Buy Properties</a></li>
-                  <li><a href="properties.html">Rent Properties</a></li>
-                  <li><a href="submit-property.html">Sell Properties</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-12 col-md-4">
-                <h4 class="pxp-footer-header mt-4 mt-lg-0">Explore</h4>
-                <ul class="list-unstyled pxp-footer-links mt-2">
-                  <li><a href="properties.html">Homes for Rent</a></li>
-                  <li><a href="properties.html">Apartments for Rent</a></li>
-                  <li><a href="properties.html">Homes for Sale</a></li>
-                  <li><a href="properties.html">Apartments for Sale</a></li>
-                  
-                </ul>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="pxp-signup-lastname">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pxp-signup-lastname"
+                    placeholder="Enter last name"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+            <div class="form-group">
+              <label for="pxp-signup-email">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="pxp-signup-email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pxp-signup-pass">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pxp-signup-pass"
+                placeholder="Create a password"
+              />
+            </div>
+            <div class="form-group">
+              <a href="#" class="pxp-agent-contact-modal-btn">Sign Up</a>
+            </div>
+            <div class="text-center mt-4 pxp-modal-small">
+              Already have an account?
+              <a
+                href="javascript:void(0);"
+                class="pxp-modal-link pxp-signin-trigger"
+                >Sign in</a
+              >
+            </div>
+          </form>
         </div>
       </div>
     </div>
-    <div class="row pxp-footer-social mt-2">
-      <div class="col-md-12" style="text-align: center">
-        <a href="https://www.instagram.com/doorstourindia/"><span class="fa fa-instagram"></span></a>
-        <a href="https://www.facebook.com/doorstourindia/"><span class="fa fa-facebook-square"></span></a>
-        <a href="https://twitter.com/doorstour1?s=08"><span class="fa fa-twitter"></span></a>
-        <a href="https://www.linkedin.com/company/doorstour/"><span class="fa fa-linkedin"></span></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12" style="text-align: center">
-        <div class="pxp-footer-bottom mt-2">
-          <div>
-            <a href="termsncond.html">Terms & Conditions</a> and
-            <a href="privacypolicy.html">Privacy Policy</a>
-          </div>
-          <div class="pxp-footer-copyright">
-            &copy; DoorsTour All Rights Reserved. 2020
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="pxp-signin-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="pxpSigninModal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h5 class="modal-title" id="pxpSigninModal">Welcome back!</h5>
-            <form class="mt-4">
-              <div class="form-group">
-                <label for="pxp-signin-email">Email</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="pxp-signin-email"
-                  placeholder="Enter your email address"
-                />
-              </div>
-              <div class="form-group">
-                <label for="pxp-signin-pass">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="pxp-signin-pass"
-                  placeholder="Enter your password"
-                />
-              </div>
-              <div class="form-group">
-                <a href="#" class="pxp-agent-contact-modal-btn">Sign In</a>
-              </div>
-              <div class="form-group mt-4 text-center pxp-modal-small">
-                <a href="#" class="pxp-modal-link">Forgot password</a>
-              </div>
-              <div class="text-center pxp-modal-small">
-                New to DoorsTour?
-                <a
-                  href="javascript:void(0);"
-                  class="pxp-modal-link pxp-signup-trigger"
-                  >Create an account</a
-                >
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="pxp-signup-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="pxpSignupModal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <h5 class="modal-title" id="pxpSignupModal">Create an account</h5>
-            <form class="mt-4">
-              <div class="row">
-                <div class="col-6">
-                  <div class="form-group">
-                    <label for="pxp-signup-firstname">First Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="pxp-signup-firstname"
-                      placeholder="Enter first name"
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-group">
-                    <label for="pxp-signup-lastname">Last Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="pxp-signup-lastname"
-                      placeholder="Enter last name"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="pxp-signup-email">Email</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="pxp-signup-email"
-                  placeholder="Enter your email address"
-                />
-              </div>
-              <div class="form-group">
-                <label for="pxp-signup-pass">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="pxp-signup-pass"
-                  placeholder="Create a password"
-                />
-              </div>
-              <div class="form-group">
-                <a href="#" class="pxp-agent-contact-modal-btn">Sign Up</a>
-              </div>
-              <div class="text-center mt-4 pxp-modal-small">
-                Already have an account?
-                <a
-                  href="javascript:void(0);"
-                  class="pxp-modal-link pxp-signin-trigger"
-                  >Sign in</a
-                >
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
