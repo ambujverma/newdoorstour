@@ -124,6 +124,118 @@ h4 {
 .pxp-footer-logo {
   color: white;
 }
+#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popupcontainer {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  left: 0;
+  right: 0;
+  padding: 8%;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  /* border: 1px solid red; */
+  background: rgba(0, 0, 0, 0.315);
+}
+#popup {
+  position: relative;
+  display: flex;
+  top: 60%;
+  left: 50%;
+  width: 900px;
+  background: #1b1b1b;
+  object-fit: cover;
+  /* border: solid 1px red; */
+  border-radius: 20px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+#popupcontainer.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+.popup-pic {
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  width: 425px;
+  height: 550px;
+  object-fit: fill;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.popup-pic > img {
+  align-items: center;
+  display: inline-block;
+  height: 530px;
+  width: 410px;
+  margin: 10px;
+  object-fit: fill;
+  border-radius: 20px;
+}
+#details-box {
+  align-items: center;
+  position: relative;
+  width: 475px;
+  padding: 15px;
+}
+#details-box > .name {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+}
+.details-head {
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+}
+.details-head > .back {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  border: solid 1px rgb(9, 95, 42);
+  border-radius: 5px;
+  padding: 0 3px 0 3px;
+  margin-left: 10px;
+}
+.details-head > .back:hover {
+  background-color: rgb(9, 95, 42);
+  box-shadow: 0 0 0 0 green, 0 0 4px 0 green;
+  border: 1px solid white;
+}
+.details-head > .contact {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  border: solid 1px rgb(9, 95, 42);
+  padding: 0 3px 0 3px;
+  margin-left: 315px;
+  border-radius: 5px;
+}
+.details-head > .contact:hover {
+  background-color: rgb(9, 95, 42);
+  box-shadow: 0 0 0 0 green, 0 0 4px 0 green;
+  border: solid 1px white;
+}
+#details-box h3,
+p {
+  color: white;
+  margin: 5px;
+}
 @media (max-width: 1200px) {
   .container2 {
     columns: 3;
@@ -132,22 +244,105 @@ h4 {
     padding: 20px 20px 20px 0;
   }
 }
+@media only screen and (max-width: 930px) {
+  .details-head > .contact {
+    margin-left: 240px;
+  }
+  .details-head > .back {
+    margin-left: 40px;
+  }
+  #popupcontainer {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: auto;
+  }
+  #popup {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 475px;
+    min-height: 100%;
+    margin-top: 250px;
+    margin-bottom: 10px;
+  }
+  .popup-pic {
+    width: 425px;
+    display: inline-block;
+    margin-top: 10px;
+    object-fit: fill;
+  }
+  .popup-pic > img {
+    border-radius: 20px;
+  }
+  #details-box {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 425px;
+    /* border: solid 1px blue;   */
+  }
+  #details-box {
+    padding: 10px;
+  }
+}
 @media (max-width: 768px) {
-  .header2 > ul > input {
-    display: none;
-  }
-
-  .header2 > ul > li > h2 {
-    font-size: 14px;
-    margin-top: 7px;
-  }
-
   .container2 {
     columns: 2;
   }
+  .header2 > ul > input {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .header2 {
+    top: 70px;
+    width: 100%;
+    z-index: 10;
+  }
+  .header2 > ul {
+    margin-top: 20px;
+    height: 40px;
+    margin-right: 3px;
+  }
 }
 @media (max-width: 480px) {
+  .header2 h2 {
+    display: none;
+  }
+  .tag2 {
+    display: block;
+  }
   .container2 {
     columns: 1;
+  }
+  .header2 {
+    top: 70px;
+    width: 100%;
+    z-index: 10;
+  }
+  .header2 > ul {
+    height: 70px;
+    margin-right: 3px;
+  }
+  .header2 > ul > input {
+    width: 40%;
+  }
+  .header2 > ul > li {
+    width: auto;
+  }
+  .header2 ul li a {
+    padding: 2px 3px 2px 3px;
+    margin-top: 25px;
+    font-size: small;
+    font-weight: lighter;
+    box-shadow: 0 0 0 0 green, 0 0 4px 0 green;
+  }
+  #popup {
+    margin-top: 280px;
   }
 }

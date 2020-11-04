@@ -23,7 +23,19 @@
     <link rel="stylesheet" href="css/dropzonee2a5.css?asdsd" />
     <link rel="stylesheet" href="css/style9558.css?lksa" />
 
-    <title>DoorsTour</title>
+    <script>
+      function submit(){
+        let confirm = alert("Are you sure do you want to submit property details");
+        if(confirm){
+            document.getElementById("upload_btn").click = true;
+            return true;
+        }else{
+          return false;
+        }
+      }
+    </script>
+
+    <title>Post Property - DoorsTour</title>
   </head>
   <body>
     <div class="pxp-header fixed-top pxp-animate pxp-no-bg">
@@ -122,7 +134,9 @@
         </div>
       </div>
     </div>
-
+<!----------------------------------------START OF FORM SUBMISSION------------------------------------------------>
+<!-- action="submit_property_details.php"   -->
+<form method="post" action="submit_property_details.php" enctype="multipart/form-data">  
     <div class="pxp-content">
       <div class="pxp-submit-property pxp-content-wrapper mt-100">
         <div class="container">
@@ -133,15 +147,56 @@
           </div>
           <div class="row mt-4 mt-md-5">
             <div class="col-sm-12 col-lg-8">
+              <h3>Property Owner Information</h3>
+              <div class="mt-3 mt-md-4">
+                <div class="form-group">
+                  <label for="pxp-submit-property-owner-name">Name of Property Owner</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pxp-submit-property-owner-name"
+                    name="pxp-submit-property-owner-name-name"
+                    placeholder="Enter property owner name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pxp-submit-property-owner-number">Phone Number of Property Owner</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="pxp-submit-property-owner-number"
+                    name="pxp-submit-property-owner-number-name"
+                    placeholder="Enter property owner number"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pxp-submit-property-owner-email">Email of Property Owner</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="pxp-submit-property-owner-email"
+                    name="pxp-submit-property-owner-email-name"
+                    placeholder="Enter property owner email"
+                    required
+                  />
+                </div>
+              </div>
+              <br />
+              <br />
               <h3>Basic Information</h3>
               <div class="mt-3 mt-md-4">
                 <div class="form-group">
                   <label for="pxp-submit-property-title">Title</label>
                   <input
                     type="text"
+                    autocomplete="0"
                     class="form-control"
                     id="pxp-submit-property-title"
+                    name="pxp-submit-property-title-name"
                     placeholder="Enter property title"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -149,8 +204,10 @@
                   <textarea
                     class="form-control"
                     id="pxp-submit-property-overview"
+                    name="pxp-submit-property-overview-name"
                     rows="6"
                     placeholder="Describe the property..."
+                    required
                   ></textarea>
                 </div>
               </div>
@@ -160,13 +217,13 @@
                 <div class="col-sm-12 col-md-6">
                   <div class="form-group">
                     <label for="pxp-submit-property-type">Type</label>
-                    <select class="custom-select" id="pxp-submit-property-type">
-                      <option value="">Select type</option>
-                      <option value="">Apartment</option>
-                      <option value="">House</option>
-                      <option value="">Townhome</option>
-                      <option value="">Multi-Family</option>
-                      <option value="">Land</option>
+                    <select class="custom-select" id="pxp-submit-property-type" required name="pxp-submit-property-type-name">
+                      <option value="" selected disabled hidden>Select type</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="house">House</option>
+                      <option value="townhouse">Townhome</option>
+                      <option value="multi-family">Multi-Family</option>
+                      <option value="land">Land</option>
                     </select>
                   </div>
                 </div>
@@ -176,11 +233,13 @@
                     <select
                       class="custom-select"
                       id="pxp-submit-property-status"
+                      name="pxp-submit-property-status-name"
+                      required
                     >
-                      <option value="">Select status</option>
-                      <option value="">For Rent</option>
-                      <option value="">For Sale</option>
-                      <option value="">To Let</option>
+                      <option value="" selected disabled hidden>Select status</option>
+                      <option value="rent">For Rent</option>
+                      <option value="sale">For Sale</option>
+                      <option value="to-let">To Let</option>
                     </select>
                   </div>
                 </div>
@@ -191,6 +250,8 @@
                       type="text"
                       class="form-control"
                       id="pxp-submit-property-built"
+                      name="pxp-submit-property-built-name"
+                      required
                     />
                   </div>
                 </div>
@@ -201,6 +262,8 @@
                       type="text"
                       class="form-control"
                       id="pxp-submit-property-stories"
+                      name="pxp-submit-property-stories-name"
+                      required
                     />
                   </div>
                 </div>
@@ -211,6 +274,8 @@
                       type="text"
                       class="form-control"
                       id="pxp-submit-property-rooms"
+                      name="pxp-submit-property-rooms-name"
+                      required
                     />
                   </div>
                 </div>
@@ -223,6 +288,8 @@
                       type="text"
                       class="form-control"
                       id="pxp-submit-property-parking"
+                      name="pxp-submit-property-parking-name"
+                      required
                     />
                   </div>
                 </div>
@@ -234,8 +301,8 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
-                          class="fa fa-wifi"
+                        ><input type="checkbox" value="internet" id="pxp-submit-property-internet" name="pxp-submit-property-internet-name" /><span
+                          class="fa fa-wifi" 
                         ></span>
                         Internet</label
                       >
@@ -246,7 +313,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="garage" id="pxp-submit-property-garage" name="pxp-submit-property-garage-name"/><span
                           class="fa fa-car"
                         ></span>
                         Garage</label
@@ -258,7 +325,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="air-conditioning" id="pxp-submit-property-air-conditioning" name="pxp-submit-property-air-conditioning-name"/><span
                           class="fa fa-sun-o"
                         ></span>
                         Air Conditioning</label
@@ -270,7 +337,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="dishwasher" id="pxp-submit-property-dishwasher" name="pxp-submit-property-dishwasher-name"/><span
                           class="fa fa-bullseye"
                         ></span>
                         Dishwasher</label
@@ -282,7 +349,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="disposal" id="pxp-submit-property-disposal" name="pxp-submit-property-disposal-name"/><span
                           class="fa fa-recycle"
                         ></span>
                         Disposal</label
@@ -294,7 +361,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="balcony" id="pxp-submit-property-balcony" name="pxp-submit-property-balcony-name"/><span
                           class="fa fa-clone"
                         ></span>
                         Balcony</label
@@ -306,7 +373,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="gym" id="pxp-submit-property-gym" name="pxp-submit-property-gym-name"/><span
                           class="fa fa-futbol-o"
                         ></span>
                         Gym</label
@@ -318,7 +385,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="playroom" id="pxp-submit-property-playroom" name="pxp-submit-property-playroom-name"/><span
                           class="fa fa-smile-o"
                         ></span>
                         Playroom</label
@@ -330,7 +397,7 @@
                   <div class="form-group">
                     <div class="checkbox custom-checkbox">
                       <label
-                        ><input type="checkbox" value="1" /><span
+                        ><input type="checkbox" value="bar" id="pxp-submit-property-bar" name="pxp-submit-property-bar-name"/><span
                           class="fa fa-glass"
                         ></span>
                         Bar</label
@@ -340,20 +407,64 @@
                 </div>
               </div>
 
-              <!-- <h3 class="mt-4 mt-md-5">Photo Gallery</h3>
-              <form
+              <!-- <?php
+                  if(isset($_POST['upload_name'])){
+
+                    echo("hi open");
+                    $photo_gallery = "property set by user";
+                    $name_file = $_FILES['pxp-submit-property-file-upload-name']['name'];
+                    $type_file = $_FILES['pxp-submit-property-file-upload-name']['type'];
+                    $data_file = $_FILES['pxp-submit-property-file-upload-name']['tmp_data'];
+                    $_SESSION['name_of_file_uploaded_by_user'] = $name_file;
+                    $_SESSION['type_of_file_uploaded_by_user'] = $type_file;
+                    $_SESSION['data_of_file_uploaded_by_user'] = $data_file;
+                    echo($_FILES['pxp-submit-property-file-upload-name']);
+                    echo($_SESSION['name_of_file_uploaded_by_user']);
+                    echo($_SESSION['type_of_file_uploaded_by_user']);
+                    echo($_SESSION['data_of_file_uploaded_by_user']);
+                
+                }else{
+                  echo("closed");
+                    $photo_gallery = "no property set by user";
+                    $name_file = "empty";
+                    $type_file = "";
+                    $data_file = "";
+                    
+                }
+                
+                ?> -->
+
+              <!-- <h3 class="mt-4 mt-md-5">Photo Gallery</h3> -->
+              <!-- <form
                 class="dropzone needsclick mt-3 mt-md-4"
-                id="demo-upload"
-                action="http://pixelprime.co/upload"
-              >
-                <div class="dz-message needsclick">
+                enctype="multipart/form-data"
+                method="post"
+                required
+              > -->
+                <!-- <div class="dz-message needsclick">
                   Drop files here or click to upload.<br />
                   <span class="note needsclick"
                     >This is just a demo dropzone. Selected files are
                     <strong>not</strong> actually uploaded.</span
                   >
-                </div>
-              </form> -->
+                </div> -->
+              
+                <!-- <input type="file" id="pxp-submit-property-file-upload" name="pxp-submit-property-file-upload-name"> -->
+                <!-- <input type="submit" id="upload_btn" name="upload_name">UPLOAD HERE -->
+              <!-- </button> -->
+              <!-- </form>  -->
+              
+<!--                             
+              <?php
+              echo "<pre>"; 
+              print_r($_FILES); 
+              echo "</pre>"; 
+              ?>  -->
+           <!-- <form action="" method="post" enctype="multipart/form-data"> 
+              <input type="file" name="photo" accept="*">  -->
+              <!-- <input type="submit" value="Upload Image">  -->
+           </form> 
+           
             </div>
             <div class="col-sm-12 col-lg-4">
               <div
@@ -368,7 +479,9 @@
                         type="text"
                         class="form-control"
                         id="pxp-submit-property-price"
+                        name="pxp-submit-property-price-name"
                         placeholder="Enter price"
+                        required
                       />
                     </div>
                   </div>
@@ -381,7 +494,9 @@
                         type="text"
                         class="form-control"
                         id="pxp-submit-property-plabel"
+                        name="pxp-submit-property-plabel-name"
                         placeholder="Enter price label"
+                        required
                       />
                     </div>
                   </div>
@@ -394,7 +509,9 @@
                         type="text"
                         class="form-control"
                         id="pxp-submit-property-beds"
+                        name="pxp-submit-property-beds-name"
                         placeholder="0"
+                        required
                       />
                     </div>
                   </div>
@@ -405,7 +522,9 @@
                         type="text"
                         class="form-control"
                         id="pxp-submit-property-baths"
+                        name="pxp-submit-property-baths-name"
                         placeholder="0"
+                        required
                       />
                     </div>
                   </div>
@@ -416,7 +535,9 @@
                         type="text"
                         class="form-control"
                         id="pxp-submit-property-size"
+                        name="pxp-submit-property-size-name"
                         placeholder="0"
+                        required
                       />
                     </div>
                   </div>
@@ -431,22 +552,27 @@
                       type="text"
                       class="form-control"
                       id="pxp-submit-property-address"
+                      name="pxp-submit-property-address-name"
                       placeholder="Enter address"
+                      required
                     />
                   </div>
-                  <div id="pxp-submit-property-map"></div>
+                  <!-- <div id="pxp-submit-property-map"></div> -->
                 </div>
               </div>
             </div>
           </div>
 
           <div class="mt-4 mt-md-5">
-            <a href="#" class="pxp-submit-property-btn">Submit Property</a>
+            <!-- <label for="pxp-submit-property-btn">Submit Property</label> -->
+            <!--<a href="#" class="pxp-submit-property-btn">-->
+            <input type="submit" id="upload_btn" name="upload_name" class="pxp-submit-property-btn" value="Submit Property">
           </div>
         </div>
       </div>
     </div>
-
+  </form>  
+<!-------------------------------------END OF FORM SUBMISSION-------------------------------------------------->
     <!-- footer -->
     <div class="pxp-footer pt-100 pb-100 mt-100">
       <div class="container">
