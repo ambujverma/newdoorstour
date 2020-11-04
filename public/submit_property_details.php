@@ -299,7 +299,7 @@ if(isset($_POST['pxp-submit-property-bar-name'])){
 
 // echo("<br>");
 echo("<br><br><br><br><br>");
-echo("<h1>Your House has been Submitted Successfully.<br>We will contact your shortly!</h1>");
+echo("<h1>Your House has been Submitted Successfully.<br>We will contact you shortly!</h1>");
 // echo "<pre>"; 
 // // print_r($_FILES); 
 // echo "</pre>";
@@ -399,7 +399,7 @@ $password = "";
 $db_name = "doorstour";
 
 //1.CREATE CONNECTION TO DB
-$conn = new mysqli($hostname,$username,$password,$db_name);
+$conn = new mysqli($hostname,$username,$password,$db_name,'3306');
 
 
 if($conn->connect_error){
