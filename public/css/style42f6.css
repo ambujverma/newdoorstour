@@ -286,6 +286,25 @@ h1.pxp-page-header {
   padding-right: 15px;
   padding-left: 15px;
 }
+.postbutton{
+  position: absolute;
+  display:none;
+  text-decoration: none;
+  border-radius:4px;
+  border: 1px solid rgb(9, 95, 42);
+  text-align: center;
+  font-size:.8rem;
+  font-weight:550;
+  padding:1px 2px 1px  2px;
+  background-color: transparent;
+  margin-top:10px;
+  cursor: pointer;
+}
+.postbutton:hover{
+  background-color:pink;
+  border: 1px solid black;
+  color: black;
+}
 @media (min-width: 1440px) {
   .col-xxl {
     -ms-flex-preferred-size: 0;
@@ -477,7 +496,6 @@ h1.pxp-page-header {
   display: block;
   background: #fff;
   position: fixed;
-  height: 100px;
   width: 100%;
   z-index: 1040;
   left: 0;
@@ -5025,6 +5043,11 @@ fieldset[disabled] .checkbox.custom-checkbox input:checked + span {
   }
 }
 @media screen and (max-width: 991px) {
+  .postbutton{
+    position: absolute;
+    display:block;
+    right:65px;
+}
   .pxp-nav {
     display: none;
     position: fixed;
@@ -5036,6 +5059,7 @@ fieldset[disabled] .checkbox.custom-checkbox input:checked + span {
     padding-top: 120px;
     padding-bottom: 100px;
     overflow: auto;
+    height:800px;
     z-index: 1040;
   }
   .pxp-dark-mode .pxp-nav {
@@ -5109,7 +5133,7 @@ fieldset[disabled] .checkbox.custom-checkbox input:checked + span {
     position: relative;
     top: auto;
     left: 0;
-    z-index: 1;
+    z-index: 1000000;
     float: none;
     min-width: 200px;
     padding: 7px 0;
@@ -5118,8 +5142,10 @@ fieldset[disabled] .checkbox.custom-checkbox input:checked + span {
     text-align: left;
     box-shadow: none;
     display: none;
+    
   }
-  .pxp-header.pxp-mobile .pxp-nav > li > .pxp-nav-sub {
+
+  .pxp-header.pxp-mobile .pxp-nav > li:hover .pxp-nav-sub {
     display: block;
   }
   .pxp-nav > li > .pxp-nav-sub > li > a {
@@ -5450,6 +5476,11 @@ fieldset[disabled] .checkbox.custom-checkbox input:checked + span {
   }
 }
 @media screen and (max-width: 767px) {
+  .postbutton{
+    position: absolute;
+    display:block;
+    right:65px;
+}
   .pxp-logo.pxp-logo-nav {
     left: calc((100% - 540px) / 2 + 15px);
   }

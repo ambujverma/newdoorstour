@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style42f6.css?lokas" />
     <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script src="https://kit.fontawesome.com/81c2c05f29.js" ></Script>
     <title>Gyms - DoorsTour</title>
   </head>
   <body>
-    <div class="pxp-header fixed-top pxp-animate pxp-no-bg" style="filter: invert(1);">
+    <div class="pxp-header fixed-top pxp-animate pxp-no-bg" style="filter: invert(1); z-index: 100;">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-5 col-md-2">
@@ -47,9 +48,7 @@
                 <ul class="pxp-nav-sub rounded-lg">
                   <li><a href="properties.html">Buy</a></li>
                   <li><a href="properties.html">Rent</a></li>
-                  <li>
-                    <a href="properties.html">PG</a>
-                  </li>
+                  <li><a href="properties.html">PG</a></li>
                 </ul>
               </li>
               <li class="list-inline-item">
@@ -57,9 +56,7 @@
                 <ul class="pxp-nav-sub rounded-lg">
                   <li><a href="gyms.html">Gyms</a></li>
                   <li><a href="restaurants.html">Restaurants</a></li>
-                  <li>
-                    <a href="co-working.html">Co-working Spaces</a>
-                  </li>
+                  <li><a href="co-working.html">Co-working Spaces</a></li>
                   <li><a href="hotels.html">Hotels</a></li>
                 </ul>
               </li>
@@ -108,22 +105,16 @@
             </ul>
           </div>
           <div class="col-5 col-md-2 text-right">
-            <a href="javascript:void(0);" class="pxp-header-nav-trigger"
-              ><span class="fa fa-bars"></span
-            ></a>
-            <a
-              href="javascript:void(0);"
-              class="pxp-header-user pxp-signin-trigger"
-              ><span class="fa fa-user-o"></span
-            ></a>
+            <button class="postbutton">Post property</button>
+            <a href="javascript:void(0);" class="pxp-header-nav-trigger"><span class="fa fa-bars"></span></a>
+            <a href="javascript:void(0);" class="pxp-header-user pxp-signin-trigger"><span class="fa fa-user-o"></span></a>
           </div>
         </div>
       </div>
     </div>
     <nav class="header2">
-      
+      <span  class="tag">GYMS</span>
       <ul>
-        <li style="color: azure; float: left; padding: 22px;"><h2>GYMS</h2></li>    
           <input type="text" placeholder="Search...">
           <li><a href="#">Locations</a>
               <ul>
@@ -137,9 +128,11 @@
           </li>
           <li><a href="#">NEAR</a></li>
       </ul>
-            
+      <div class="wrapper">
+        <input type="text" class="input" placeholder="search..."/>
+        <button type="button" class="trigger_search" class=""><i class="fas fa-search icon"></i></button>
+      </div>
     </nav>
-
     <div class="container2" id="blur">
       <div class="box" onclick="toggle()">
           <img src="images/1.jpg">
@@ -307,16 +300,19 @@
             blur.classList.toggle('active');
             var popup = document.getElementById('popupcontainer');
             popup.classList.toggle('active');
-            // change();
         }
         
-        // var modal = document.getElementById("modal");
-        // function change(){
-        //   var boximg = document.getSelection("boxImg").src;
-        //   console.log("h2");
-        //   modal.src = boximg;
-    
-        // }
+        const trigger_search = document.querySelector('.trigger_search');
+        const input = document.querySelector('.input');
+        trigger_search.addEventListener('click', () =>{
+        if (!input.classList.contains('input-open')){
+            input.classList.add('input-open');
+            trigger_search.innerHTML = "  <i class='fas fa-times'>  </i>";
+        }
+        else{
+            input.classList.remove('input-open');
+            trigger_search.innerHTML="  <i class='fas fa-search'>  </i>";
+        }});
     </script>
 
 
@@ -367,7 +363,6 @@
                   <li><a href="properties.html">Apartments for Rent</a></li>
                   <li><a href="properties.html">Homes for Sale</a></li>
                   <li><a href="properties.html">Apartments for Sale</a></li>
-                  
                 </ul>
               </div>
             </div>
@@ -457,7 +452,6 @@
         </div>
       </div>
     </div>
-
     <div
       class="modal fade"
       id="pxp-signup-modal"
